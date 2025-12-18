@@ -68,10 +68,11 @@ export default function FacilityOnline() {
       console.log("Data uploaded successfully:", await response.json());
 
       reset(buildDefaultValues()); // ✅ reset all fields to blank
+      alert("Facilty data submitted successfully");
       setOpenSection(null); // ✅ collapse sections
     } catch (err) {
       console.error("Error submitting data:", err);
-      alert("Submission failed, please check your internet connection");
+      alert("Submission failed, please try again.");
     } finally {
       setLoading(false);
     }

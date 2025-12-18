@@ -27,7 +27,7 @@ export default function Main() {
     }
   };
 
-  const handleDBUpdate = async () => {
+  /*const handleDBUpdate = async () => {
     await fetch(`${baseUrl}/lga/update-db`, {
       method: "GET",
       headers: {
@@ -35,7 +35,7 @@ export default function Main() {
         Accept: "application/json",
       },
     });
-  };
+  };*/
 
   useEffect(() => {
     const getListOfLga = async () => {
